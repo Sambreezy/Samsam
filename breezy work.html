@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>my music site</title>
+	<meta charset:"utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<style>
+	 * {box-sizing: border-box;}
+	 body {margin: 0;}
+	 .header {background-color: orange; text-align: center; padding: 20px}
+	ul {list-style-type: none;margin: 0;padding: 0;overflow: hidden;background: black;}
+	li {float:left;}
+	li a, .dropbtn {text-align: center;padding: 14px 16px;display: inline-block;color: white;text-decoration: none;}
+	li a:hover, .dropdown:hover .dropbtn {background-color: lightblue}
+	 .dropdown {display:inline-block;}
+	 .dropdown-content {display: none;background-color: white;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);min-width:160px;z-index: 1;position: absolute}
+	 .dropdown-content a {color: black;padding:12px 16px;text-decoration: none;display: block;text-align: left;}
+	 .dropdown:hover .dropdown-content {display: block;}
+	 .dropdown-content a:hover {background: grey;}
+	 .column {float: left;padding: 10px;}
+	 .column.side {width:25%;}
+	 .column.middle {width:50%;}
+	 .row:after {content: "";display: table;clear: both;}
+	 @media (max-width:600px) {.column.side, .column.middle{width:100%} }
+	 .footer {background-color: black; color:white; text-align: center;padding: 10px;}
+   .shadow2 {margin-left: 25%;}
+   .pre-footer {text-align: right; background-color: lightgrey;margin-bottom: 0;}
+   [type=button] {padding: 15px; border: 1px solid black;border-radius: 15px; color: black;background-color: greenyellow;margin-right: 75px;cursor: pointer;margin-bottom: 15px;}
+   .pre-footer b {margin-right: 15px;}
+    </style>
+</head>
+<body>
+    <div class="header">
+      <h1>Mp3Skull<img src="images/images-4.png" alt="skull" style="width: 50px;height: 50px";></h1>
+      <p style="font-size:16px;"><i>for seranading and convenient music...</i></p>
+    </div>
+     <ul>
+      <li><a href:"#home">Home</a></li>
+      <li><a href:"#news">News</a></li>
+      <li class="dropdown">
+        <a href:"javascript:void(0)" class="dropbtn">Genres</a>
+        <div class="dropdown-content">
+         <a href:"#pop">Pop</a>
+         <a href:"#soul">Soul</a>
+         <a href:"#blues">Blues</a>
+        </div>
+      </li>
+     </ul>
+    <div class="row" style="padding-bottom: 40px;background-color: lightgrey";>
+      <div class="column side">
+       <h2>New</h2>
+       <p>Maroon 5 ft. Cardi B - Girls like you<br>
+       Rita Ora ft. Cardi B, Bebe Rexha - Girls<br>
+       Kesha - Paradise<br>
+       Olamide - Motigbana<br>
+       Drake - Kiki</p>
+      </div>
+      <div class="column middle">
+       <h2>Most Downloaded</h2>
+       Usher - Moving mountains<br>
+       Birdy - Skinny love<br>
+       Ed sheeran - Perfect<br>
+       Ed sheeran - Happier<br>
+       Taylor swift  - Delicate</p>
+      </div>
+      <div class="column side">
+       <h2>Top5</h2>
+       <p>Wizkid - Soco<br>
+       Maroon 5 ft. Cardi B - Girls like you<br>
+       Olamide - Motigbana<br>
+       Taylor swift - Delicate<br>
+       Drake - Kiki</p>
+    </div>
+    </div>
+    <div class="owl">
+    <div style="background-color: lightgrey";>
+     <img class="shadow2" src="images/IMG_7549.PNG" alt="listening to music" width="350px" height="500px";>
+    </div>
+    <div class="pre-footer">
+     <input type="button" value="Subscribe"><br>
+     <b><i>Subscribe for a better experience...</i></b>
+    </div>
+   </div>
+    <div class="footer">
+     <p> mp3skull.com&copy </p>
+    </div>
+
+
+  </body>
+</html>
